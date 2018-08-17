@@ -1,0 +1,14 @@
+package com.in28minutes.microservices;
+
+
+
+public class CurrencyConversionBean {
+
+	private long id;
+	private String from;
+	private String to;
+	private String conversionMultiple;
+	private BigDecil quantity;
+	
+	
+}//Close CurrencyConversionBean class.

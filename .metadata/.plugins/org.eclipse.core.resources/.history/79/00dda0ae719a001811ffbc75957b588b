@@ -1,0 +1,24 @@
+package com.in28minutes.microservices;
+
+import java.math.BigDecimal;
+import lombok.Data;
+
+@Data
+public class ExchangeValue {
+	
+	private Long id;
+	private String from;
+	private String to;
+	private BigDecimal conversionMultiple;
+
+	public ExchangeValue() {
+	}
+	
+	public ExchangeValue(Long id, String from, String to, BigDecimal conversionMultiple) {
+		this.id = id;
+		this.from = from;
+		this.to = to;
+		this.conversionMultiple = conversionMultiple;
+	}
+	
+}//Close ExchangeValue class.

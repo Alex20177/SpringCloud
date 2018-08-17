@@ -1,0 +1,16 @@
+package com.in28minutes.microservices;
+
+import java.math.BigDecimal;
+
+public class CurrencyConversionBean {
+
+	private long id;
+	private String from;
+	private String to;
+	private BigDecimal conversionMultiple;
+	private BigDecimal quantity;
+	private BigDecimal totalCalculateAmount;
+	
+	
+	
+}//Close CurrencyConversionBean class.

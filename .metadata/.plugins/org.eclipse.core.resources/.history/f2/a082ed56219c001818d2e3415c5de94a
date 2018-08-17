@@ -1,0 +1,5 @@
+package com.in28minutes.microservices;
+
+public interface ExchangeValueRepository {
+
+}//Close ExchangeValueRepository class.

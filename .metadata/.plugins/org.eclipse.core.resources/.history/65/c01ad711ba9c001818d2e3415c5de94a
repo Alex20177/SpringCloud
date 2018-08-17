@@ -1,0 +1,19 @@
+package com.in28minutes.microservices;
+
+import java.math.BigDecimal;
+
+import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+
+@FeignClient(name="name",url="localhost:8000")
+public interface CurrencyExchangeServiceProxy {
+
+	@GetMapping("/currency-converter/from/{from}/to/{to}")
+	public CurrencyConversionBean convertCurrency(
+			@PathVariable String from, 
+			@PathVariable String to, 
+			@PathVariable BigDecimal quantity);	
+	
+	
+}//Close CurrencyExchangeServiceProxy interface.
